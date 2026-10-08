@@ -14,6 +14,7 @@ export type Song = {
   duration: string;
 };
 
+// Song data was AI generated.
 export const albums: Album[] = [
   {
     id: "after-hours",
@@ -22,6 +23,8 @@ export const albums: Album[] = [
     description: "Album • 2020",
     image: require("@/assets/images/image_1.jpg"),
 
+
+    
     songs: [
       {
         id: 1,

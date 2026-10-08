@@ -1,11 +1,9 @@
 import { ScrollView, StyleSheet, Text, View, } from "react-native";
-
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 
 import AlbumCard from "../../../components/AlbumCard";
 import SectionHeader from "../../../components/SectionHeader";
-
 import { albums } from "../../../data/musicData";
 
 export default function HomeScreen() {
@@ -14,6 +12,7 @@ export default function HomeScreen() {
       style={styles.container}
       contentContainerStyle={styles.content}
     >
+      {/* Top header */}
       <View style={styles.header}>
         <Text style={styles.greeting}>
           Good evening
@@ -40,6 +39,7 @@ export default function HomeScreen() {
         </View>
       </View>
 
+      {/* Filter buttons */}
       <View style={styles.filters}>
         <View style={styles.activeFilter}>
           <Text style={styles.activeFilterText}>
@@ -66,6 +66,7 @@ export default function HomeScreen() {
         horizontal
         showsHorizontalScrollIndicator={false}
       >
+        {/* Display each album */}
         {albums.map((album) => (
           <AlbumCard
             key={album.id}
@@ -85,6 +86,7 @@ export default function HomeScreen() {
         horizontal
         showsHorizontalScrollIndicator={false}
       >
+        {/* Display albums in reverse order */}
         {albums
           .slice()
           .reverse()
@@ -105,40 +107,47 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  // Main screen
   container: {
     flex: 1,
     backgroundColor: "#121212",
   },
 
+  // Screen spacing
   content: {
     padding: 18,
     paddingTop: 60,
     paddingBottom: 120,
   },
 
+  // Header layout
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
   },
 
+  // Greeting text
   greeting: {
     color: "#FFFFFF",
     fontSize: 25,
     fontWeight: "bold",
   },
 
+  // Header icon layout
   headerIcons: {
     flexDirection: "row",
     gap: 18,
   },
 
+  // Filter button layout
   filters: {
     flexDirection: "row",
     gap: 8,
     marginTop: 25,
   },
 
+  // Normal filter button
   filter: {
     backgroundColor: "#2A2A2A",
     paddingHorizontal: 15,
@@ -146,10 +155,12 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 
+  // Normal filter text
   filterText: {
     color: "#FFFFFF",
   },
 
+  // Selected filter button
   activeFilter: {
     backgroundColor: "#1ED760",
     paddingHorizontal: 15,
@@ -157,6 +168,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 
+  // Selected filter text
   activeFilterText: {
     color: "#000000",
     fontWeight: "600",

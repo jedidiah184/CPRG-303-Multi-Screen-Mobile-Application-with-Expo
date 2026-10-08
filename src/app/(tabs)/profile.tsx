@@ -11,10 +11,12 @@ export default function ProfileScreen() {
         </Text>
       </View>
 
+      {/* User name */}
       <Text style={styles.name}>
         Jedidiah
       </Text>
 
+      {/* Follower information */}
       <Text style={styles.followers}>
         12 followers • 18 following
       </Text>
@@ -25,10 +27,12 @@ export default function ProfileScreen() {
         </Text>
       </Pressable>
 
+      {/* Playlist section */}
       <Text style={styles.sectionTitle}>
         Your playlists
       </Text>
 
+      {/* Playlist image */}
       <View style={styles.playlist}>
         <View style={styles.playlistImage}>
           <Ionicons
@@ -38,6 +42,7 @@ export default function ProfileScreen() {
           />
         </View>
 
+        {/* Playlist information */}
         <View>
           <Text style={styles.playlistTitle}>
             My Playlist
@@ -53,6 +58,7 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
+  // Main screen
   container: {
     flex: 1,
     backgroundColor: "#121212",
@@ -61,6 +67,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
+  // Profile image
   profileImage: {
     width: 130,
     height: 130,
@@ -70,12 +77,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
+  // Profile letter
   profileLetter: {
     color: "#FFFFFF",
     fontSize: 50,
     fontWeight: "bold",
   },
 
+  // User name
   name: {
     color: "#FFFFFF",
     fontSize: 28,
@@ -83,11 +92,13 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
 
+  // Follower text
   followers: {
     color: "#A7A7A7",
     marginTop: 10,
   },
 
+  // Edit profile button
   editButton: {
     borderWidth: 1,
     borderColor: "#777777",
@@ -97,11 +108,13 @@ const styles = StyleSheet.create({
     marginVertical: 25,
   },
 
+  // Edit button text
   editText: {
     color: "#FFFFFF",
     fontWeight: "600",
   },
 
+  // Playlist section title
   sectionTitle: {
     color: "#FFFFFF",
     fontSize: 21,
@@ -111,12 +124,14 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
 
+  // Playlist row
   playlist: {
     flexDirection: "row",
     alignItems: "center",
     alignSelf: "stretch",
   },
 
+  // Playlist image box
   playlistImage: {
     width: 70,
     height: 70,
@@ -126,12 +141,14 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
 
+  // Playlist title
   playlistTitle: {
     color: "#FFFFFF",
     fontSize: 16,
     fontWeight: "600",
   },
 
+  // Playlist information
   playlistInfo: {
     color: "#A7A7A7",
     marginTop: 5,

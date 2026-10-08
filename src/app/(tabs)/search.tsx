@@ -2,6 +2,7 @@ import { StyleSheet, Text, TextInput, View, ScrollView, } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 
+// Search categories
 const categories = [
   { name: "Pop", color: "#8D67AB" },
   { name: "Hip-Hop", color: "#BA5D07" },
@@ -17,6 +18,7 @@ export default function SearchScreen() {
       style={styles.container}
       contentContainerStyle={styles.content}
     >
+      {/* Page title */}
       <Text style={styles.heading}>
         Search
       </Text>
@@ -35,10 +37,12 @@ export default function SearchScreen() {
         />
       </View>
 
+      {/* Browse section */}
       <Text style={styles.sectionHeading}>
         Browse all
       </Text>
 
+      {/* Category grid */}
       <View style={styles.grid}>
         {categories.map((category) => (
           <View
@@ -67,12 +71,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#121212",
   },
 
+  // Screen spacing
   content: {
     padding: 18,
     paddingTop: 60,
     paddingBottom: 100,
   },
 
+  // Page heading
   heading: {
     color: "#FFFFFF",
     fontSize: 30,
@@ -80,6 +86,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
 
+  // Search bar
   searchBox: {
     backgroundColor: "#FFFFFF",
     flexDirection: "row",
@@ -89,12 +96,14 @@ const styles = StyleSheet.create({
     height: 50,
   },
 
+  // Search input
   input: {
     flex: 1,
     marginLeft: 10,
     fontWeight: "600",
   },
 
+  // Browse heading
   sectionHeading: {
     color: "#FFFFFF",
     fontSize: 20,
@@ -102,12 +111,14 @@ const styles = StyleSheet.create({
     marginVertical: 24,
   },
 
+  // Category layout
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
   },
 
+  // Category box
   category: {
     width: "48%",
     height: 105,
@@ -116,6 +127,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
 
+  // Category text
   categoryTitle: {
     color: "#FFFFFF",
     fontSize: 18,

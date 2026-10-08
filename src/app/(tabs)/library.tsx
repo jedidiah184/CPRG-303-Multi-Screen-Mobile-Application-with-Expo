@@ -1,7 +1,5 @@
 import { FlatList, StyleSheet, Text, View, Image } from "react-native";
-
 import { Ionicons } from "@expo/vector-icons";
-
 import { albums } from "../../../data/musicData";
 
 export default function LibraryScreen() {
@@ -47,12 +45,15 @@ export default function LibraryScreen() {
         </View>
       </View>
 
+      {/* Album list */}
       <FlatList
         data={albums}
         keyExtractor={(item) => item.id}
         contentContainerStyle={{
           paddingBottom: 100,
         }}
+
+        // Display each album
         renderItem={({ item }) => (
           <View style={styles.albumRow}>
             <Image
@@ -77,6 +78,7 @@ export default function LibraryScreen() {
 }
 
 const styles = StyleSheet.create({
+  // Main screen
   container: {
     flex: 1,
     backgroundColor: "#121212",
@@ -84,6 +86,8 @@ const styles = StyleSheet.create({
     paddingTop: 60,
   },
 
+
+  // Header Layout
   header: {
     flexDirection: "row",
     alignItems: "center",
@@ -116,12 +120,14 @@ const styles = StyleSheet.create({
     gap: 20,
   },
 
+  // Filter button layout
   filters: {
     flexDirection: "row",
     gap: 10,
     marginBottom: 25,
   },
 
+  // Filter button
   filter: {
     borderWidth: 1,
     borderColor: "#777777",

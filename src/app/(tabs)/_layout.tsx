@@ -5,17 +5,21 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
+        // Hide the top header
         headerShown: false,
 
+        // Tab icon colors
         tabBarActiveTintColor: "#FFFFFF",
         tabBarInactiveTintColor: "#A7A7A7",
 
+        // Bottom tab bar styling
         tabBarStyle: {
           backgroundColor: "#121212",
           borderTopColor: "#282828",
         },
       }}
     >
+      {/* Home tab */}
       <Tabs.Screen
         name="index"
         options={{

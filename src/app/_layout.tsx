@@ -15,6 +15,7 @@ export default function RootLayout() {
         },
       }}
     >
+      {/* Main tab navigation */}
       <Stack.Screen
         name="(tabs)"
         options={{
@@ -22,6 +23,7 @@ export default function RootLayout() {
         }}
       />
 
+      {/* Album detail screen */}
       <Stack.Screen
         name="album/[id]"
         options={{

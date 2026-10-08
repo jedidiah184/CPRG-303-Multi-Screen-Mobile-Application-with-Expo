@@ -13,6 +13,7 @@ export default function SectionHeader({ title, }: SectionHeaderProps) {
 }
 
 const styles = StyleSheet.create({
+  // Section heading style
   heading: {
     color: "#FFFFFF",
     fontSize: 23,
