@@ -28,6 +28,7 @@ export default function RootLayout() {
         name="album/[id]"
         options={{
           title: "Album",
+          headerBackButtonDisplayMode: "minimal",
         }}
       />
     </Stack>

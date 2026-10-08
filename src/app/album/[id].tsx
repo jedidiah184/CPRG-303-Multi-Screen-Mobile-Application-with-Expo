@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View, } from "react-native";
+import { ScrollView, StyleSheet, Text, View, Image, } from "react-native";
 
 import { Stack, useLocalSearchParams, } from "expo-router";
 
@@ -28,6 +28,7 @@ export default function AlbumDetailScreen() {
       <Stack.Screen
         options={{
           title: album.title,
+          headerBackButtonDisplayMode: "minimal",
         }}
       />
 
@@ -35,18 +36,10 @@ export default function AlbumDetailScreen() {
         style={styles.container}
         contentContainerStyle={styles.content}
       >
-        <View
-          style={[
-            styles.albumCover,
-            {
-              backgroundColor: album.image,
-            },
-          ]}
-        >
-          <Text style={styles.albumLetter}>
-            {album.title.charAt(0)}
-          </Text>
-        </View>
+        <Image
+          source={album.image}
+          style={styles.albumCover}
+        />
 
         <Text style={styles.title}>
           {album.title}
@@ -119,8 +112,6 @@ const styles = StyleSheet.create({
     width: 240,
     height: 240,
     alignSelf: "center",
-    justifyContent: "center",
-    alignItems: "center",
     marginTop: 20,
     marginBottom: 25,
   },
