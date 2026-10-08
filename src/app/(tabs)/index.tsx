@@ -71,7 +71,7 @@ export default function HomeScreen() {
             key={album.id}
             title={album.title}
             artist={album.artist}
-            color={album.color}
+            image={album.image}
             onPress={() =>
               router.push(`/album/${album.id}`)
             }
@@ -93,7 +93,7 @@ export default function HomeScreen() {
               key={album.id}
               title={album.title}
               artist={album.artist}
-              color={album.color}
+              image={album.image}
               onPress={() =>
                 router.push(`/album/${album.id}`)
               }

@@ -1,56 +1,75 @@
-# Welcome to your Expo app 👋
+Welcome to the Spotify Clone App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an Expo project built with React Native, Expo Router, and TypeScript.
 
-## Get started
+The app is inspired by Spotify and demonstrates tab navigation, stack navigation, dynamic routes, reusable components, and dynamic content.
+
+Get started
 
 1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+npm install
 
 2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+npx expo start
 
-In the output, you'll find options to open the app in a
+In the output, you'll find options to open the app in a:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- development build
+- Android emulator
+- iOS simulator
+- Expo Go
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+You can start developing by editing the files inside the src/app directory.
 
-## Get a fresh project
+This project uses file-based routing with Expo Router.
 
-When you're ready, run:
+App features
 
-```bash
-npm run reset-project
-```
+- Home screen
+- Search screen
+- Library screen
+- Profile screen
+- Album detail screen
+- Bottom tab navigation
+- Stack navigation
+- Dynamic album routes
+- Reusable components
+- TypeScript props
+- Spotify-style dark theme
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Technologies used
 
-### Other setup steps
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Ionicons
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Attribution
 
-## Learn more
+This project uses images from Unsplash for album cover artwork.
 
-To learn more about developing your project with Expo, look at the following resources:
+Images are provided by Unsplash:
+https://unsplash.com/
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Individual image credits:
 
-## Join the community
+- Photo by Jake Blucker on Unsplash
+  (https://unsplash.com/photos/black-concrete-road-surrounded-by-brown-rocks-tMzCrBkM99Y)
 
-Join our community of developers creating universal apps.
+- Photo by Jans Riesenberg on Unsplash
+  (https://unsplash.com/photos/a-colorful-cd-sitting-on-top-of-a-black-surface-PZ7HxI8tW_E)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Photo by Ben Sweet on Unsplash
+  https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E
+
+- Photo by Arvind Pillai on Unsplash
+  https://unsplash.com/photos/a-person-standing-next-to-a-body-of-water-Yl4Y7COttGo
+
+These images are used for educational purposes as part of this mobile application project.
+
+Author
+
+Jedidiah Belayneh

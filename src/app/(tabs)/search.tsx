@@ -1,4 +1,4 @@
-import {StyleSheet, Text, TextInput, View, ScrollView, } from "react-native";
+import { StyleSheet, Text, TextInput, View, ScrollView, } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 

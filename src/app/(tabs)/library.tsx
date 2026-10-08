@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, Text, View, } from "react-native";
+import { FlatList, StyleSheet, Text, View, Image } from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 
@@ -55,19 +55,10 @@ export default function LibraryScreen() {
         }}
         renderItem={({ item }) => (
           <View style={styles.albumRow}>
-            <View
-              style={[
-                styles.albumImage,
-                {
-                  backgroundColor:
-                    item.color,
-                },
-              ]}
-            >
-              <Text style={styles.letter}>
-                {item.title.charAt(0)}
-              </Text>
-            </View>
+            <Image
+              source={item.image}
+              style={styles.albumImage}
+            />
 
             <View>
               <Text style={styles.albumTitle}>

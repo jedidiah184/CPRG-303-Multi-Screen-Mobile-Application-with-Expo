@@ -3,7 +3,7 @@ export type Album = {
   title: string;
   artist: string;
   description: string;
-  color: string;
+  image: any;
   songs: Song[];
 };
 
@@ -20,7 +20,7 @@ export const albums: Album[] = [
     title: "After Hours",
     artist: "The Weeknd",
     description: "Album • 2020",
-    color: "#7B1418",
+    image: require("@/assets/images/image_1.jpg"),
 
     songs: [
       {
@@ -55,7 +55,7 @@ export const albums: Album[] = [
     title: "UTOPIA",
     artist: "Travis Scott",
     description: "Album • 2023",
-    color: "#614C35",
+    image: require("@/assets/images/image_2.jpg"),
 
     songs: [
       {
@@ -90,7 +90,7 @@ export const albums: Album[] = [
     title: "Views",
     artist: "Drake",
     description: "Album • 2016",
-    color: "#596978",
+    image: require("@/assets/images/image_3.jpg"),
 
     songs: [
       {
@@ -119,7 +119,7 @@ export const albums: Album[] = [
     title: "Graduation",
     artist: "Kanye West",
     description: "Album • 2007",
-    color: "#985A96",
+    image: require("@/assets/images/image_4.jpg"),
 
     songs: [
       {

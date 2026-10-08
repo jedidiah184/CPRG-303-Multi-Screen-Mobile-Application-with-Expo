@@ -39,7 +39,7 @@ export default function AlbumDetailScreen() {
           style={[
             styles.albumCover,
             {
-              backgroundColor: album.color,
+              backgroundColor: album.image,
             },
           ]}
         >

@@ -1,28 +1,32 @@
-import { Pressable, StyleSheet, Text, View, } from "react-native";
+import {
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+} from "react-native";
 
 type AlbumCardProps = {
   title: string;
   artist: string;
-  color: string;
+  image: any;
   onPress: () => void;
 };
 
-export default function AlbumCard({ title, artist, color, onPress,}: AlbumCardProps) {
+export default function AlbumCard({
+  title,
+  artist,
+  image,
+  onPress,
+}: AlbumCardProps) {
   return (
     <Pressable
       style={styles.card}
       onPress={onPress}
     >
-      <View
-        style={[
-          styles.albumImage,
-          { backgroundColor: color },
-        ]}
-      >
-        <Text style={styles.albumLetter}>
-          {title.charAt(0)}
-        </Text>
-      </View>
+      <Image
+        source={image}
+        style={styles.albumImage}
+      />
 
       <Text
         style={styles.title}
@@ -48,17 +52,9 @@ const styles = StyleSheet.create({
   },
 
   albumImage: {
-    height: 155,
     width: 155,
-    justifyContent: "center",
-    alignItems: "center",
+    height: 155,
     marginBottom: 8,
-  },
-
-  albumLetter: {
-    color: "#FFFFFF",
-    fontSize: 50,
-    fontWeight: "bold",
   },
 
   title: {
